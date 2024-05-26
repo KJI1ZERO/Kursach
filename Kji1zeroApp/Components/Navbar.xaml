@@ -1,0 +1,95 @@
+﻿<Page x:Class="Kji1zeroApp.Components.Navbar"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kji1zeroApp.Components"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Navbar">
+
+    <Page.Resources>
+        <ImageBrush x:Key="BackgroundBrush" ImageSource="/Photos/BackSide.jpg" />
+    </Page.Resources>
+
+    <StackPanel Margin="0,0,-2,-1179" Background="{StaticResource BackgroundBrush}">
+   
+        <StackPanel Margin="0,0,0,-179">
+        <Button HorizontalAlignment="Stretch"
+            HorizontalContentAlignment="Left"
+            Style="{StaticResource BorderBottom}"
+                 FontSize="13"
+                FontFamily="Italic"
+                FontWeight="Bold"
+                Click="Button_Click">
+            Главная страница
+        </Button>
+
+        <Separator Width="20" Background="Transparent"/>
+        <Button HorizontalAlignment="Stretch"
+         HorizontalContentAlignment="Left"
+         Style="{StaticResource BorderBottom}"
+               
+         x:Name="RozgrBtn" Click="RozgrBtn_Click"
+          FontSize="13"
+ FontWeight="Bold">
+            Розыгрыш
+        </Button>
+        <Separator Width="20" Background="Transparent"/>
+        <Button HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Left"
+                Style="{StaticResource BorderBottom}"
+                 FontSize="13"
+ FontWeight="Bold" Click="Button_Click_2">
+            Для мальчиков
+        </Button>
+        <Separator Width="20" Background="Transparent"/>
+        <Button HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Left"
+                Style="{StaticResource BorderBottom}"
+                 FontSize="13"
+ FontWeight="Bold" Click="Button_Click_3">
+            Для девочек
+        </Button>
+        <Separator Width="20" Background="Transparent"/>
+        <Button HorizontalAlignment="Stretch"
+               HorizontalContentAlignment="Left"
+               Style="{StaticResource BorderBottom}"
+                FontSize="13"
+FontWeight="Bold" Click="Button_Click_4">
+            Для малюток
+        </Button>
+        <Separator Width="20" Background="Transparent"/>
+        <Button HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Left"
+                Style="{StaticResource BorderBottom}"
+                x:Name="aboutBtn"
+                Click="aboutBtn_Click"
+                 FontSize="13"
+ FontWeight="Bold">
+            О нас
+        </Button>
+        <Separator Width="20" Background="Transparent"/>
+        <Button HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Left"
+                Style="{StaticResource BorderBottom}"
+                x:Name="reviewsBtn"
+                Click="reviewsBtn_Click"
+                 FontSize="13"
+ FontWeight="Bold">
+            Отзывы
+        </Button>
+        <Separator Width="20" Background="Transparent"/>
+
+        <Button HorizontalAlignment="Stretch"
+               HorizontalContentAlignment="Left"
+               Style="{StaticResource BorderBottom}"
+                FontSize="13"
+                FontWeight="Bold" Click="Button_Click_1">
+            Для Одменов
+        </Button>
+    </StackPanel>
+
+    </StackPanel>
+    
+</Page>

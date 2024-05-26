@@ -1,0 +1,82 @@
+﻿<Page x:Class="Kji1zeroApp.Pages.CreateReviewPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kji1zeroApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreateReviewPage">
+
+    <Grid>
+
+        <Grid.Style>
+            <Style TargetType="Grid">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <ImageBrush ImageSource="/Photos/BackSide.jpg" Stretch="Fill" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Grid.Style>
+        <Button Click="BackButton_Click"
+        Margin="63,49,0,0" 
+        HorizontalAlignment="Left"
+        VerticalAlignment="Top">
+            <Path Data="M6,0 L0,6 L6,12"
+          Stroke="Black"
+          StrokeThickness="2"
+          Margin="5" />
+        </Button>
+
+        <StackPanel Margin="0,139,0,48" HorizontalAlignment="Center" Width="674">
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                <TextBlock Text="Логин:" FontWeight="DemiBold" Width="46"/>
+                <TextBlock/>
+                <TextBox Padding="3" IsReadOnly="True"  x:Name="loginTB" Width="89" />
+            </StackPanel>
+            <TextBlock Text="Расскажите что думаете!" FontWeight="DemiBold"
+                   Width="278"
+                   />
+            <TextBox 
+                 x:Name="textTB"
+                 AcceptsReturn="True"
+                 AcceptsTab="True"
+                 Height="114"
+                 HorizontalAlignment="Center"
+                 Width="304"/>
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Margin="10">
+                <RadioButton GroupName="rating"
+                         Content="1"
+                         Checked="RadioButton_Checked"
+                         Margin="10 0"/>
+                <RadioButton GroupName="rating"
+                         Content="2"
+                         Checked="RadioButton_Checked"
+                         Margin="10 0"/>
+                <RadioButton GroupName="rating"
+                         Content="3"
+                         Checked="RadioButton_Checked"
+                         Margin="10 0"/>
+                <RadioButton GroupName="rating"
+                         Content="4"
+                         Checked="RadioButton_Checked"
+                         Margin="10 0"/>
+                <RadioButton GroupName="rating"
+                         Content="5"
+                         Checked="RadioButton_Checked"
+                         Margin="10 0"/>
+            </StackPanel>
+            <Button x:Name="sendBtn"
+                Click="sendBtn_Click"
+                HorizontalAlignment="Center"
+                
+                Width="300">Отправить</Button>
+
+        </StackPanel>
+    </Grid>
+</Page>

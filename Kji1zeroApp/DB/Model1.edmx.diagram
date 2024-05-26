@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3fdee46d82b445cda7992d21d4026d68" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="KursachModel.AgeTovar" Width="1.5" PointX="0.75" PointY="1.875" />
+        <EntityTypeShape EntityType="KursachModel.Category_Tovar" Width="1.5" PointX="0.75" PointY="5.875" />
+        <EntityTypeShape EntityType="KursachModel.Otzivi" Width="1.5" PointX="7.5" PointY="1.75" />
+        <EntityTypeShape EntityType="KursachModel.Role" Width="1.5" PointX="3" PointY="5.875" />
+        <EntityTypeShape EntityType="KursachModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="KursachModel.Tovar" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="KursachModel.User" Width="1.5" PointX="5.25" PointY="1.125" />
+        <AssociationConnector Association="KursachModel.FK_Tovar_AgeTovar" />
+        <AssociationConnector Association="KursachModel.FK_Tovar_Category_Tovar" />
+        <AssociationConnector Association="KursachModel.FK_Otzivi_User" />
+        <AssociationConnector Association="KursachModel.FK_User_Role" />
+        <AssociationConnector Association="KursachModel.FK_User_Tovar" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
